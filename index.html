@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dressurpferdezucht Feichtenbeiner & Thalacker | Premium Dressurpferde aus Baden-Württemberg</title>
+    <meta name="description" content="Dressurpferdezucht Feichtenbeiner & Thalacker – Zucht erstklassiger Dressurpferde in Baden-Württemberg. Vize-Bundeschampion 2024. Verkaufspferde, Zuchtstuten & Fohlen.">
+    <meta name="keywords" content="Dressurpferdezucht, Dressurpferde, Feichtenbeiner, Thalacker, Baden-Württemberg, Verkaufspferde, Fohlen, Bundeschampionat, Zucht">
+    <meta property="og:title" content="Dressurpferdezucht Feichtenbeiner & Thalacker">
+    <meta property="og:description" content="Premium Dressurpferde aus Baden-Württemberg. Vize-Bundeschampion 2024. Erstklassige Zucht mit internationalen Blutlinien.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/bebas-neue-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://images.pexels.com">
+    <link rel="dns-prefetch" href="https://images.pexels.com">
+    <style>
+        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('fonts/inter-regular.woff2') format('woff2'); }
+        @font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/bebas-neue-regular.woff2') format('woff2'); }
+        @font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/jetbrains-mono-regular.woff2') format('woff2'); }
+        @font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/jetbrains-mono-700.woff2') format('woff2'); }
+    </style>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-section: #111111;
+            --bg-card: #1a1a1a;
+            --bg-card-hover: #222222;
+            --bg-elevated: #161616;
+
+            --gold: #c9a84c;
+            --gold-light: #e0c872;
+            --gold-dark: #a08030;
+            --gold-glow: rgba(201, 168, 76, 0.12);
+            --gold-border: rgba(201, 168, 76, 0.2);
+
+            --cream: #f5f0e8;
+            --cream-dark: #d4cec4;
+
+            --text-white: #f5f0e8;
+            --text-body: #b0a898;
+            --text-muted: #7a7068;
+            --text-dark: #0a0a0a;
+
+            --border-subtle: rgba(201, 168, 76, 0.08);
+            --border-light: rgba(245, 240, 232, 0.06);
+
+            --max-width: 1320px;
+
+            --fs-hero: clamp(3.5rem, 9vw + 1rem, 9rem);
+            --fs-h2: clamp(2.4rem, 5vw + 0.5rem, 5rem);
+            --fs-h3: clamp(1.3rem, 2vw + 0.3rem, 2rem);
+            --fs-body: clamp(1rem, 1.1vw, 1.15rem);
+            --fs-small: clamp(0.8rem, 0.9vw, 0.9rem);
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text-body); background: var(--bg-primary); line-height: 1.7; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 clamp(20px, 4vw, 60px); }
+        .section-padding { padding: clamp(80px, 12vw, 160px) 0; }
+        .section-dark { background: var(--bg-section); }
+        .section-eyebrow {
+            font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+            color: var(--gold); text-transform: uppercase; letter-spacing: 0.3em;
+            display: flex; align-items: center; gap: 14px; margin-bottom: 20px;
+        }
+        .section-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--gold); }
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h2);
+            color: var(--text-white); line-height: 1.05; letter-spacing: 0.02em; margin-bottom: 20px;
+        }
+        .section-title .accent { color: var(--gold); }
+        .section-subtitle { font-size: var(--fs-body); color: var(--text-muted); max-width: 600px; line-height: 1.8; }
+
+        /* ===== HEADER ===== */
+        .site-header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 20px 0;
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
+            border-bottom: 1px solid var(--border-subtle);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .site-header.scrolled { padding: 12px 0; background: rgba(10, 10, 10, 0.92); box-shadow: 0 4px 40px rgba(0,0,0,0.3); }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 14px; }
+        .logo-text {
+            font-family: 'Bebas Neue', sans-serif; font-size: 22px;
+            color: var(--text-white); letter-spacing: 0.15em;
+        }
+        .logo-text span { color: var(--gold); }
+        .logo-divider {
+            width: 1px; height: 28px; background: var(--gold-border);
+        }
+        .logo-sub {
+            font-family: 'JetBrains Mono', monospace; font-size: 9px;
+            color: var(--text-muted); letter-spacing: 0.2em; text-transform: uppercase;
+        }
+        .main-nav { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .main-nav a {
+            font-size: 13px; font-weight: 400; color: var(--text-muted);
+            letter-spacing: 0.05em; transition: color 0.3s ease; position: relative;
+            text-transform: uppercase;
+        }
+        .main-nav a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0; width: 0;
+            height: 1px; background: var(--gold); transition: width 0.3s ease;
+        }
+        .main-nav a:hover { color: var(--gold); }
+        .main-nav a:hover::after { width: 100%; }
+        .header-cta {
+            padding: 10px 24px; background: transparent; color: var(--gold);
+            border: 1px solid var(--gold-border); font-size: 12px; font-weight: 600;
+            letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer;
+            transition: all 0.3s ease; font-family: 'Inter', sans-serif;
+        }
+        .header-cta:hover { background: var(--gold); color: var(--bg-primary); }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; background: none; border: none; }
+        .menu-toggle span { display: block; width: 24px; height: 1.5px; background: var(--text-white); transition: all 0.3s ease; }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative; min-height: 100vh; display: flex; align-items: center;
+            overflow: hidden; padding-top: 80px;
+        }
+        .hero-bg {
+            position: absolute; inset: 0; z-index: 0;
+        }
+        .hero-bg img {
+            width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+            filter: brightness(0.35) contrast(1.1);
+        }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.2) 40%, rgba(10,10,10,0.7) 80%, rgba(10,10,10,1) 100%);
+            z-index: 1;
+        }
+        .hero-content { position: relative; z-index: 2; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 8px 20px; border: 1px solid var(--gold-border);
+            background: rgba(201, 168, 76, 0.06);
+            font-family: 'JetBrains Mono', monospace; font-size: 11px;
+            color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase;
+            margin-bottom: 30px; backdrop-filter: blur(10px);
+        }
+        .hero-badge::before { content: '◆'; font-size: 8px; }
+        .hero-title {
+            font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-hero);
+            color: var(--text-white); line-height: 0.95; letter-spacing: 0.02em;
+            margin-bottom: 24px;
+        }
+        .hero-title .gold { color: var(--gold); }
+        .hero-title .thin { font-weight: 400; opacity: 0.6; }
+        .hero-sub {
+            font-size: clamp(1rem, 1.3vw, 1.2rem); color: var(--text-body);
+            max-width: 560px; line-height: 1.8; margin-bottom: 40px;
+        }
+        .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+        .btn-primary {
+            padding: 16px 36px; background: var(--gold); color: var(--bg-primary);
+            font-size: 12px; font-weight: 700; letter-spacing: 0.15em;
+            text-transform: uppercase; border: 1px solid var(--gold);
+            cursor: pointer; transition: all 0.3s ease; display: inline-flex;
+            align-items: center; gap: 10px; font-family: 'Inter', sans-serif;
+        }
+        .btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201, 168, 76, 0.25); }
+        .btn-secondary {
+            padding: 16px 36px; background: transparent; color: var(--text-white);
+            font-size: 12px; font-weight: 600; letter-spacing: 0.15em;
+            text-transform: uppercase; border: 1px solid var(--border-light);
+            cursor: pointer; transition: all 0.3s ease; display: inline-flex;
+            align-items: center; gap: 10px; font-family: 'Inter', sans-serif;
+            backdrop-filter: blur(5px);
+        }
+        .btn-secondary:hover { border-color: var(--gold-border); color: var(--gold); }
+        .hero-scroll-hint {
+            position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+            z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px;
+        }
+        .hero-scroll-hint span {
+            font-family: 'JetBrains Mono', monospace; font-size: 9px;
+            color: var(--text-muted); letter-spacing: 0.3em; text-transform: uppercase;
+        }
+        .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); animation: scrollPulse 2s infinite; }
+        @keyframes scrollPulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            background: var(--bg-section); border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle); padding: 20px 0;
+            overflow: hidden;
+        }
+        .trust-track {
+            display: flex; animation: trustScroll 30s linear infinite; width: max-content;
+        }
+        .trust-item {
+            display: flex; align-items: center; gap: 12px;
+            padding: 0 40px; white-space: nowrap;
+            font-family: 'JetBrains Mono', monospace; font-size: 11px;
+            color: var(--text-muted); letter-spacing: 0.15em; text-transform: uppercase;
+        }
+        .trust-item .dot { width: 4px; height: 4px; background: var(--gold); border-radius: 50%; }
+        @keyframes trustScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* ===== ABOUT ===== */
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+        }
+        .about-image-wrap {
+            position: relative;
+        }
+        .about-image-wrap img {
+            width: 100%; aspect-ratio: 4/5; object-fit: cover;
+            filter: brightness(0.9) contrast(1.05);
+        }
+        .about-image-frame {
+            position: absolute; top: -15px; left: -15px; right: 15px; bottom: 15px;
+            border: 1px solid var(--gold-border); pointer-events: none;
+        }
+        .about-badge-float {
+            position: absolute; bottom: -20px; right: -20px;
+            background: var(--gold); color: var(--bg-primary); padding: 20px 28px;
+            font-family: 'Bebas Neue', sans-serif; font-size: 18px;
+            letter-spacing: 0.1em; line-height: 1.2; text-align: center;
+        }
+        .about-badge-float .big { font-size: 36px; display: block; }
+        .about-text h3 {
+            font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h3);
+            color: var(--text-white); margin: 20px 0 16px; letter-spacing: 0.05em;
+        }
+        .about-text p { margin-bottom: 20px; line-height: 1.9; }
+        .about-philosophy {
+            margin-top: 30px; padding: 24px; border-left: 2px solid var(--gold);
+            background: var(--gold-glow);
+        }
+        .about-philosophy p {
+            font-style: italic; color: var(--cream-dark); margin: 0;
+        }
+
+        /* ===== HORSES / ZUCHTSTUTEN ===== */
+        .horses-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+            margin-top: 60px;
+        }
+        .horse-card {
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            overflow: hidden; transition: all 0.4s ease; position: relative;
+        }
+        .horse-card:hover {
+            border-color: var(--gold-border); transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .horse-card-img {
+            position: relative; overflow: hidden; aspect-ratio: 4/3;
+        }
+        .horse-card-img img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.6s ease; filter: brightness(0.85) contrast(1.05);
+        }
+        .horse-card:hover .horse-card-img img { transform: scale(1.05); }
+        .horse-card-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(10,10,10,0.8), transparent);
+            padding: 20px; display: flex; justify-content: space-between; align-items: flex-end;
+        }
+        .horse-card-tag {
+            font-family: 'JetBrains Mono', monospace; font-size: 9px;
+            color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase;
+            padding: 4px 10px; border: 1px solid var(--gold-border);
+            background: rgba(10,10,10,0.5); backdrop-filter: blur(5px);
+        }
+        .horse-card-body { padding: 28px; }
+        .horse-card-name {
+            font-family: 'Bebas Neue', sans-serif; font-size: 26px;
+            color: var(--text-white); letter-spacing: 0.08em; margin-bottom: 4px;
+        }
+        .horse-card-breeding {
+            font-family: 'JetBrains Mono', monospace; font-size: 11px;
+            color: var(--gold); letter-spacing: 0.05em; margin-bottom: 14px;
+        }
+        .horse-card-details {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+            padding-top: 14px; border-top: 1px solid var(--border-subtle);
+        }
+        .horse-detail-item {
+            font-size: 12px;
+        }
+        .horse-detail-label {
+            color: var(--text-muted); font-size: 10px; text-transform: uppercase;
+            letter-spacing: 0.1em; margin-bottom: 2px;
+        }
+        .horse-detail-value { color: var(--cream-dark); font-weight: 500; }
+
+        /* ===== SUCCESS / ERFOLGE ===== */
+        .success-section { position: relative; overflow: hidden; }
+        .success-bg {
+            position: absolute; inset: 0; z-index: 0;
+        }
+        .success-bg img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: brightness(0.2) contrast(1.1);
+        }
+        .success-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(135deg, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.7) 100%);
+            z-index: 1;
+        }
+        .success-content { position: relative; z-index: 2; }
+        .success-highlight {
+            display: grid; grid-template-columns: auto 1fr; gap: 60px; align-items: center;
+            margin-top: 50px;
+        }
+        .success-trophy {
+            text-align: center; padding: 40px;
+            border: 1px solid var(--gold-border); background: var(--gold-glow);
+        }
+        .success-trophy .trophy-icon { font-size: 64px; margin-bottom: 10px; }
+        .success-trophy .trophy-title {
+            font-family: 'Bebas Neue', sans-serif; font-size: 36px;
+            color: var(--gold); letter-spacing: 0.1em; line-height: 1.1;
+        }
+        .success-trophy .trophy-sub {
+            font-family: 'JetBrains Mono', monospace; font-size: 12px;
+            color: var(--text-muted); letter-spacing: 0.15em; text-transform: uppercase;
+            margin-top: 8px;
+        }
+        .success-details h3 {
+            font-family: 'Bebas Neue', sans-serif; font-size: 28px;
+            color: var(--text-white); margin-bottom: 16px; letter-spacing: 0.05em;
+        }
+        .success-details p { line-height: 1.9; margin-bottom: 16px; }
+        .success-stats {
+            display: flex; gap: 40px; margin-top: 30px; padding-top: 24px;
+            border-top: 1px solid var(--border-subtle);
+        }
+        .success-stat-number {
+            font-family: 'Bebas Neue', sans-serif; font-size: 42px;
+            color: var(--gold); line-height: 1;
+        }
+        .success-stat-label {
+            font-size: 11px; color: var(--text-muted); text-transform: uppercase;
+            letter-spacing: 0.1em; margin-top: 4px;
+        }
+
+        /* ===== FOALS / NACHZUCHT ===== */
+        .foals-showcase {
+            display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px;
+            margin-top: 60px;
+        }
+        .foal-main {
+            position: relative; overflow: hidden; aspect-ratio: 3/2;
+        }
+        .foal-main img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: brightness(0.85); transition: transform 0.6s ease;
+        }
+        .foal-main:hover img { transform: scale(1.03); }
+        .foal-main-info {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(10,10,10,0.9), transparent);
+            padding: 30px;
+        }
+        .foal-main-info h3 {
+            font-family: 'Bebas Neue', sans-serif; font-size: 28px;
+            color: var(--text-white); letter-spacing: 0.08em;
+        }
+        .foal-main-info p {
+            font-family: 'JetBrains Mono', monospace; font-size: 11px;
+            color: var(--gold); letter-spacing: 0.1em;
+        }
+        .foals-side { display: flex; flex-direction: column; gap: 20px; }
+        .foal-mini {
+            display: grid; grid-template-columns: 120px 1fr; gap: 20px;
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            padding: 16px; transition: all 0.3s ease; align-items: center;
+        }
+        .foal-mini:hover { border-color: var(--gold-border); }
+        .foal-mini img {
+            width: 100%; aspect-ratio: 1; object-fit: cover;
+            filter: brightness(0.85);
+        }
+        .foal-mini-info h4 {
+            font-family: 'Bebas Neue', sans-serif; font-size: 18px;
+            color: var(--text-white); letter-spacing: 0.08em; margin-bottom: 4px;
+        }
+        .foal-mini-info p {
+            font-size: 12px; color: var(--text-muted); line-height: 1.6;
+        }
+        .foal-mini-info .sire {
+            font-family: 'JetBrains Mono', monospace; font-size: 10px;
+            color: var(--gold); letter-spacing: 0.1em;
+        }
+
+        /* ===== STATS ===== */
+        .stats-section {
+            background: var(--bg-section); border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;
+            text-align: center; padding: 60px 0;
+        }
+        .stat-item { position: relative; }
+        .stat-item:not(:last-child)::after {
+            content: ''; position: absolute; right: -20px; top: 10%; height: 80%;
+            width: 1px; background: var(--border-subtle);
+        }
+        .stat-number {
+            font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 4vw, 4rem);
+            color: var(--gold); line-height: 1;
+        }
+        .stat-label {
+            font-size: 12px; color: var(--text-muted); text-transform: uppercase;
+            letter-spacing: 0.15em; margin-top: 8px;
+        }
+
+        /* ===== SPORT ===== */
+        .sport-content {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+            align-items: center; margin-top: 50px;
+        }
+        .sport-image-wrap { position: relative; }
+        .sport-image-wrap img {
+            width: 100%; aspect-ratio: 3/4; object-fit: cover;
+            filter: brightness(0.85) contrast(1.05);
+        }
+        .sport-image-accent {
+            position: absolute; top: 20px; right: -20px;
+            width: 100%; height: 100%; border: 1px solid var(--gold-border);
+            z-index: -1;
+        }
+        .sport-text h3 {
+            font-family: 'Bebas Neue', sans-serif; font-size: 28px;
+            color: var(--text-white); margin-bottom: 16px; letter-spacing: 0.05em;
+        }
+        .sport-text p { margin-bottom: 16px; line-height: 1.9; }
+        .sport-achievements {
+            margin-top: 30px; display: flex; flex-direction: column; gap: 12px;
+        }
+        .achievement-item {
+            display: flex; align-items: center; gap: 14px;
+            padding: 14px 18px; background: var(--bg-card);
+            border: 1px solid var(--border-subtle); transition: all 0.3s ease;
+        }
+        .achievement-item:hover { border-color: var(--gold-border); }
+        .achievement-icon {
+            width: 36px; height: 36px; display: flex; align-items: center;
+            justify-content: center; background: var(--gold-glow);
+            border: 1px solid var(--gold-border); color: var(--gold); font-size: 16px;
+            flex-shrink: 0;
+        }
+        .achievement-text {
+            font-size: 13px; color: var(--cream-dark); font-weight: 500;
+        }
+        .achievement-text span {
+            font-size: 11px; color: var(--text-muted); font-weight: 400;
+            display: block; margin-top: 2px;
+        }
+
+        /* ===== SALES / VERKAUFSPFERDE ===== */
+        .sales-info {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+            margin-top: 50px; align-items: center;
+        }
+        .sales-text p { line-height: 1.9; margin-bottom: 20px; }
+        .sales-features {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px;
+        }
+        .sales-feature {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 13px; color: var(--cream-dark);
+        }
+        .sales-feature::before {
+            content: '◆'; color: var(--gold); font-size: 8px; flex-shrink: 0;
+        }
+        .sales-image-wrap {
+            position: relative;
+        }
+        .sales-image-wrap img {
+            width: 100%; aspect-ratio: 4/5; object-fit: cover;
+            filter: brightness(0.85);
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto auto;
+            gap: 12px;
+            margin-top: 50px;
+        }
+        .gallery-item {
+            overflow: hidden; position: relative; cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.5s ease; filter: brightness(0.8);
+            aspect-ratio: 1;
+        }
+        .gallery-item:hover img { transform: scale(1.05); filter: brightness(0.95); }
+        .gallery-item.wide { grid-column: span 2; }
+        .gallery-item.wide img { aspect-ratio: 2/1; }
+        .gallery-item.tall { grid-row: span 2; }
+        .gallery-item.tall img { aspect-ratio: 1/2; }
+
+        /* ===== INSTAGRAM CTA ===== */
+        .insta-section {
+            background: linear-gradient(135deg, var(--bg-section) 0%, #1a1510 100%);
+            text-align: center;
+        }
+        .insta-icon {
+            width: 60px; height: 60px; margin: 0 auto 20px;
+            border: 1px solid var(--gold-border); border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--gold-glow);
+        }
+        .insta-icon svg { width: 28px; height: 28px; color: var(--gold); }
+        .insta-handle {
+            font-family: 'JetBrains Mono', monospace; font-size: 14px;
+            color: var(--gold); letter-spacing: 0.05em; margin-top: 16px;
+        }
+        .insta-stats {
+            display: flex; justify-content: center; gap: 40px; margin-top: 24px;
+        }
+        .insta-stat { text-align: center; }
+        .insta-stat-num {
+            font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--text-white);
+        }
+        .insta-stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+        /* ===== CTA ===== */
+        .cta-section {
+            position: relative; overflow: hidden; text-align: center;
+        }
+        .cta-bg {
+            position: absolute; inset: 0;
+        }
+        .cta-bg img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: brightness(0.15);
+        }
+        .cta-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(135deg, rgba(10,10,10,0.85) 0%, rgba(201,168,76,0.1) 100%);
+        }
+        .cta-content { position: relative; z-index: 2; }
+        .cta-content .section-title { margin-bottom: 16px; }
+        .cta-content .section-subtitle { margin: 0 auto 40px; text-align: center; }
+        .cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+        /* ===== CONTACT ===== */
+        .contact-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+            margin-top: 50px;
+        }
+        .contact-info-block {
+            display: flex; flex-direction: column; gap: 30px;
+        }
+        .contact-item {
+            display: flex; gap: 16px; align-items: flex-start;
+        }
+        .contact-icon {
+            width: 44px; height: 44px; display: flex; align-items: center;
+            justify-content: center; border: 1px solid var(--gold-border);
+            background: var(--gold-glow); flex-shrink: 0;
+        }
+        .contact-icon svg { width: 18px; height: 18px; color: var(--gold); }
+        .contact-label {
+            font-size: 11px; color: var(--text-muted); text-transform: uppercase;
+            letter-spacing: 0.1em; margin-bottom: 4px;
+        }
+        .contact-value {
+            font-size: 15px; color: var(--cream-dark); font-weight: 500;
+        }
+        .contact-value a { color: var(--cream-dark); transition: color 0.3s; }
+        .contact-value a:hover { color: var(--gold); }
+        .contact-form {
+            display: flex; flex-direction: column; gap: 16px;
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .form-field {
+            padding: 14px 18px; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            color: var(--text-white); font-family: 'Inter', sans-serif; font-size: 14px;
+            outline: none; transition: border-color 0.3s; width: 100%;
+        }
+        .form-field:focus { border-color: var(--gold-border); }
+        .form-field::placeholder { color: var(--text-muted); }
+        textarea.form-field { min-height: 120px; resize: vertical; }
+        .form-submit {
+            padding: 16px 36px; background: var(--gold); color: var(--bg-primary);
+            border: 1px solid var(--gold); font-size: 12px; font-weight: 700;
+            letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer;
+            transition: all 0.3s ease; font-family: 'Inter', sans-serif;
+            align-self: flex-start;
+        }
+        .form-submit:hover { background: var(--gold-light); border-color: var(--gold-light); }
+
+        /* ===== FOOTER ===== */
+        .site-footer {
+            background: var(--bg-primary); border-top: 1px solid var(--border-subtle);
+            padding: 60px 0 30px;
+        }
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+            padding-bottom: 40px; border-bottom: 1px solid var(--border-subtle);
+        }
+        .footer-brand .logo-text { margin-bottom: 16px; }
+        .footer-brand p { font-size: 13px; color: var(--text-muted); line-height: 1.8; max-width: 280px; }
+        .footer-col h4 {
+            font-family: 'Bebas Neue', sans-serif; font-size: 16px;
+            color: var(--text-white); letter-spacing: 0.1em; margin-bottom: 16px;
+        }
+        .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-col ul a {
+            font-size: 13px; color: var(--text-muted); transition: color 0.3s;
+        }
+        .footer-col ul a:hover { color: var(--gold); }
+        .footer-bottom {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 24px; flex-wrap: wrap; gap: 10px;
+        }
+        .footer-copy { font-size: 12px; color: var(--text-muted); }
+        .footer-legal { display: flex; gap: 24px; }
+        .footer-legal a {
+            font-size: 12px; color: var(--text-muted); transition: color 0.3s;
+        }
+        .footer-legal a:hover { color: var(--gold); }
+
+        /* ===== SCROLL REVEAL ===== */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 1024px) {
+            .main-nav { display: none; }
+            .menu-toggle { display: flex; }
+            .about-grid, .sport-content, .sales-info, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+            .success-highlight { grid-template-columns: 1fr; gap: 40px; }
+            .horses-grid { grid-template-columns: 1fr 1fr; }
+            .foals-showcase { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-item.wide { grid-column: span 1; }
+            .gallery-item.wide img { aspect-ratio: 1; }
+            .footer-top { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .horses-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+            .stat-item:not(:last-child)::after { display: none; }
+            .hero-title { font-size: clamp(2.8rem, 10vw, 5rem); }
+            .success-stats { flex-direction: column; gap: 20px; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-top { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; }
+            .about-badge-float { position: relative; bottom: auto; right: auto; display: inline-block; margin-top: 16px; }
+            .about-image-frame { display: none; }
+            .sport-image-accent { display: none; }
+            .sales-features { grid-template-columns: 1fr; }
+            .insta-stats { flex-direction: column; gap: 16px; }
+        }
+
+        /* ===== MOBILE NAV ===== */
+        .mobile-nav {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10,10,10,0.98); z-index: 999;
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; gap: 30px; opacity: 0;
+            pointer-events: none; transition: opacity 0.4s ease;
+            backdrop-filter: blur(20px);
+        }
+        .mobile-nav.active { opacity: 1; pointer-events: all; }
+        .mobile-nav a {
+            font-family: 'Bebas Neue', sans-serif; font-size: 32px;
+            color: var(--text-white); letter-spacing: 0.1em;
+            transition: color 0.3s;
+        }
+        .mobile-nav a:hover { color: var(--gold); }
+        .mobile-nav-close {
+            position: absolute; top: 24px; right: 24px;
+            background: none; border: none; color: var(--text-white);
+            font-size: 28px; cursor: pointer;
+        }
+
+        /* ===== LOADING ===== */
+        .page-loader {
+            position: fixed; inset: 0; background: var(--bg-primary);
+            z-index: 9999; display: flex; align-items: center; justify-content: center;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        .page-loader.hidden { opacity: 0; visibility: hidden; }
+        .loader-content { text-align: center; }
+        .loader-line {
+            width: 60px; height: 1px; background: var(--gold);
+            margin: 0 auto; animation: loaderPulse 1.2s ease-in-out infinite;
+        }
+        @keyframes loaderPulse { 0%, 100% { transform: scaleX(0.3); opacity: 0.3; } 50% { transform: scaleX(1); opacity: 1; } }
+        .loader-text {
+            font-family: 'JetBrains Mono', monospace; font-size: 10px;
+            color: var(--text-muted); letter-spacing: 0.3em; text-transform: uppercase;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+        <div class="loader-line"></div>
+        <div class="loader-text">Feichtenbeiner & Thalacker</div>
+    </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+    <a href="#zucht" onclick="closeMobileNav()">Zuchtstuten</a>
+    <a href="#ueber-uns" onclick="closeMobileNav()">Über uns</a>
+    <a href="#erfolge" onclick="closeMobileNav()">Erfolge</a>
+    <a href="#nachzucht" onclick="closeMobileNav()">Nachzucht</a>
+    <a href="#verkauf" onclick="closeMobileNav()">Verkaufspferde</a>
+    <a href="#kontakt" onclick="closeMobileNav()">Kontakt</a>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-text">FEICHTENBEINER <span>&</span> THALACKER</div>
+                <div class="logo-divider"></div>
+                <div class="logo-sub">Dressurpferdezucht</div>
+            </a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#zucht">Zuchtstuten</a></li>
+                    <li><a href="#ueber-uns">Über uns</a></li>
+                    <li><a href="#erfolge">Erfolge</a></li>
+                    <li><a href="#nachzucht">Nachzucht</a></li>
+                    <li><a href="#verkauf">Verkaufspferde</a></li>
+                </ul>
+            </nav>
+            <a href="#kontakt" class="header-cta">Kontakt</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <img src="https://images.pexels.com/photos/30728846/pexels-photo-30728846.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Elegantes Dressurpferd" loading="eager"
+             srcset="https://images.pexels.com/photos/30728846/pexels-photo-30728846.jpeg?auto=compress&cs=tinysrgb&w=800 800w,
+                     https://images.pexels.com/photos/30728846/pexels-photo-30728846.jpeg?auto=compress&cs=tinysrgb&w=1280 1280w,
+                     https://images.pexels.com/photos/30728846/pexels-photo-30728846.jpeg?auto=compress&cs=tinysrgb&w=1920 1920w"
+             sizes="100vw">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <div class="hero-badge">Vize-Bundeschampion 2024</div>
+        <h1 class="hero-title">
+            DRESSURPFERDE<br>
+            <span class="gold">ZUCHT</span> <span class="thin">MIT</span><br>
+            <span class="gold">PASSION</span>
+        </h1>
+        <p class="hero-sub">
+            Zuchtgemeinschaft Feichtenbeiner & Thalacker — erstklassige Dressurpferde aus
+            Baden-Württemberg mit internationalen Blutlinien und sportlicher Veranlagung.
+        </p>
+        <div class="hero-actions">
+            <a href="#zucht" class="btn-primary">Unsere Pferde →</a>
+            <a href="#kontakt" class="btn-secondary">Kontakt aufnehmen</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="trust-bar">
+    <div class="trust-track" id="trustTrack">
+        <div class="trust-item"><span class="dot"></span>Vize-Bundeschampion 2024</div>
+        <div class="trust-item"><span class="dot"></span>Baden-Württemberg</div>
+        <div class="trust-item"><span class="dot"></span>Internationale Blutlinien</div>
+        <div class="trust-item"><span class="dot"></span>KWPN & Hannoveraner</div>
+        <div class="trust-item"><span class="dot"></span>Fohlen & Verkaufspferde</div>
+        <div class="trust-item"><span class="dot"></span>PZV Baden-Württemberg</div>
+        <div class="trust-item"><span class="dot"></span>Dressursport</div>
+        <div class="trust-item"><span class="dot"></span>Vize-Bundeschampion 2024</div>
+        <div class="trust-item"><span class="dot"></span>Baden-Württemberg</div>
+        <div class="trust-item"><span class="dot"></span>Internationale Blutlinien</div>
+        <div class="trust-item"><span class="dot"></span>KWPN & Hannoveraner</div>
+        <div class="trust-item"><span class="dot"></span>Fohlen & Verkaufspferde</div>
+        <div class="trust-item"><span class="dot"></span>PZV Baden-Württemberg</div>
+        <div class="trust-item"><span class="dot"></span>Dressursport</div>
+    </div>
+</div>
+
+<!-- Über Uns -->
+<section class="section-padding" id="ueber-uns">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-wrap reveal">
+                <img src="https://images.pexels.com/photos/7883179/pexels-photo-7883179.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pferde im Stall" loading="lazy">
+                <div class="about-image-frame"></div>
+                <div class="about-badge-float">
+                    <span class="big">ZG</span>
+                    Feichtenbeiner<br>& Thalacker
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <div class="section-eyebrow">Über uns</div>
+                <h2 class="section-title">ZUCHT AUS <span class="accent">LEIDENSCHAFT</span></h2>
+                <p>
+                    Die Zuchtgemeinschaft Feichtenbeiner & Thalacker steht für die Zucht
+                    erstklassiger Dressurpferde in Baden-Württemberg. Unser Ziel ist es, Pferde
+                    mit hervorragenden Grundgangarten, sportlicher Veranlagung und einem
+                    ausgeglichenen Charakter zu züchten.
+                </p>
+                <p>
+                    Mit ausgewählten Stuten aus renommierten Blutlinien — darunter KWPN und
+                    Hannoveraner Abstammungen — und der Anpaarung an die besten Dressurvererber
+                    Europas streben wir konsequent höchste Qualität an.
+                </p>
+                <h3>Mitglied im Pferdezuchtverband Baden-Württemberg</h3>
+                <p>
+                    Als aktive Mitglieder im PZV Baden-Württemberg sind wir stolzer Teil der
+                    baden-württembergischen Zuchtlandschaft und wurden im Züchterporträt des
+                    Verbandsjahrbuches 2024/2025 vorgestellt.
+                </p>
+                <div class="about-philosophy">
+                    <p>
+                        „Wir züchten Pferde, die nicht nur sportlich überzeugen, sondern auch
+                        durch ihren Charakter begeistern — Qualität statt Quantität."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="3" data-suffix="">0</div>
+                <div class="stat-label">Zuchtstuten</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="3" data-suffix="">0</div>
+                <div class="stat-label">Fohlen 2026</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="2" data-suffix=".">0</div>
+                <div class="stat-label">Platz Bundeschampionat</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="2551" data-suffix="+">0</div>
+                <div class="stat-label">Instagram Follower</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Zuchtstuten -->
+<section class="section-padding section-dark" id="zucht">
+    <div class="container">
+        <div class="reveal">
+            <div class="section-eyebrow">Unsere Zuchtstuten</div>
+            <h2 class="section-title">FUNDAMENT UNSERER <span class="accent">ZUCHT</span></h2>
+            <p class="section-subtitle">Ausgewählte Stuten mit erstklassigen Blutlinien und sportlicher Veranlagung bilden die Basis unserer Zucht.</p>
+        </div>
+        <div class="horses-grid">
+            <div class="horse-card reveal">
+                <div class="horse-card-img">
+                    <img src="https://images.pexels.com/photos/20175279/pexels-photo-20175279.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Grace" loading="lazy">
+                    <div class="horse-card-overlay">
+                        <div class="horse-card-tag">KWPN</div>
+                    </div>
+                </div>
+                <div class="horse-card-body">
+                    <div class="horse-card-name">GRACE</div>
+                    <div class="horse-card-breeding">v. Florencio — mv. Regazzoni</div>
+                    <div class="horse-card-details">
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Jahrgang</div>
+                            <div class="horse-detail-value">2011</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Zuchtverband</div>
+                            <div class="horse-detail-value">KWPN</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Nachkommen</div>
+                            <div class="horse-detail-value">3 Fohlen</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Blutlinie</div>
+                            <div class="horse-detail-value">Florencio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horse-card reveal">
+                <div class="horse-card-img">
+                    <img src="https://images.pexels.com/photos/31130173/pexels-photo-31130173.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bella Bond" loading="lazy">
+                    <div class="horse-card-overlay">
+                        <div class="horse-card-tag">Hannoveraner</div>
+                    </div>
+                </div>
+                <div class="horse-card-body">
+                    <div class="horse-card-name">BELLA BOND</div>
+                    <div class="horse-card-breeding">v. Belissimo M — mv. Quaterback</div>
+                    <div class="horse-card-details">
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Jahrgang</div>
+                            <div class="horse-detail-value">2015</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Zuchtverband</div>
+                            <div class="horse-detail-value">Hannoveraner</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Erfolge</div>
+                            <div class="horse-detail-value">Dressurpferde A</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Blutlinie</div>
+                            <div class="horse-detail-value">Belissimo M</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horse-card reveal">
+                <div class="horse-card-img">
+                    <img src="https://images.pexels.com/photos/18169425/pexels-photo-18169425.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fallulah" loading="lazy">
+                    <div class="horse-card-overlay">
+                        <div class="horse-card-tag">Hannoveraner</div>
+                    </div>
+                </div>
+                <div class="horse-card-body">
+                    <div class="horse-card-name">FALLULAH</div>
+                    <div class="horse-card-breeding">v. Fürstenball — mv. Hotline / Sandro Hit</div>
+                    <div class="horse-card-details">
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Jahrgang</div>
+                            <div class="horse-detail-value">2016</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Zuchtverband</div>
+                            <div class="horse-detail-value">Hannoveraner</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Muttervater</div>
+                            <div class="horse-detail-value">Hotline</div>
+                        </div>
+                        <div class="horse-detail-item">
+                            <div class="horse-detail-label">Blutlinie</div>
+                            <div class="horse-detail-value">Fürstenball</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Erfolge -->
+<section class="success-section section-padding" id="erfolge">
+    <div class="success-bg">
+        <img src="https://images.pexels.com/photos/883630/pexels-photo-883630.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Dressur Wettbewerb" loading="lazy">
+    </div>
+    <div class="success-overlay"></div>
+    <div class="container success-content">
+        <div class="reveal">
+            <div class="section-eyebrow">Erfolge</div>
+            <h2 class="section-title">UNSERE PFERDE IM <span class="accent">SPORT</span></h2>
+        </div>
+        <div class="success-highlight reveal">
+            <div class="success-trophy">
+                <div class="trophy-icon">🏆</div>
+                <div class="trophy-title">VIZE-BUNDES&shy;CHAMPION</div>
+                <div class="trophy-sub">Warendorf 2024</div>
+            </div>
+            <div class="success-details">
+                <h3>SNICKERS — UNSER GANZER STOLZ</h3>
+                <p>
+                    Unser Nachwuchspferd Snickers sorgte beim Bundeschampionat 2024 in Warendorf
+                    für Furore. In der Einlaufprüfung bereits auf dem 2. Platz mit einer
+                    Wertnote von 8,5, sicherte sich Snickers im Finale mit 8,4 den Titel des
+                    Vize-Bundeschampions.
+                </p>
+                <p>
+                    Vorgestellt von Reiterin Harnisch — ein herausragendes Ergebnis, das die
+                    Qualität unserer Zucht auf höchstem Niveau bestätigt.
+                </p>
+                <div class="success-stats">
+                    <div>
+                        <div class="success-stat-number">8,5</div>
+                        <div class="success-stat-label">Einlaufprüfung</div>
+                    </div>
+                    <div>
+                        <div class="success-stat-number">8,4</div>
+                        <div class="success-stat-label">Finale</div>
+                    </div>
+                    <div>
+                        <div class="success-stat-number">2.</div>
+                        <div class="success-stat-label">Platzierung</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sport / Fyenn -->
+<section class="section-padding" id="sport">
+    <div class="container">
+        <div class="sport-content">
+            <div class="sport-image-wrap reveal">
+                <img src="https://images.pexels.com/photos/4895011/pexels-photo-4895011.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dressurreiten in der Halle" loading="lazy">
+                <div class="sport-image-accent"></div>
+            </div>
+            <div class="sport-text reveal">
+                <div class="section-eyebrow">Sport</div>
+                <h2 class="section-title">AKTIV IM <span class="accent">DRESSURSPORT</span></h2>
+                <p>
+                    Neben unserer Zuchtarbeit sind wir selbst aktiv im Dressursport
+                    unterwegs. Thalacker und Fyenn F bilden ein eingespieltes Team, das 2025
+                    an zahlreichen Turnieren teilgenommen hat — mit fast ausnahmslos
+                    Platzierungen.
+                </p>
+                <p>
+                    Das Training erfolgt unter Anleitung von Harnisch sowie
+                    Plaster und Casper am Gestüt Birkhof — ein Netzwerk aus erfahrenen
+                    Ausbilderinnen, das Pferd und Reiterin stetig weiterbringt.
+                </p>
+                <div class="sport-achievements">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🏅</div>
+                        <div class="achievement-text">
+                            10+ Turniere 2025
+                            <span>Fast ausnahmslos platziert</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">📈</div>
+                        <div class="achievement-text">
+                            Aufstieg in die nächste Klasse
+                            <span>Ziel für die Saison 2026</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🏇</div>
+                        <div class="achievement-text">
+                            Training am Gestüt Birkhof
+                            <span>Schulterherein, Traversale, Außengalopp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nachzucht / Fohlen -->
+<section class="section-padding section-dark" id="nachzucht">
+    <div class="container">
+        <div class="reveal">
+            <div class="section-eyebrow">Nachzucht</div>
+            <h2 class="section-title">FOHLEN <span class="accent">2026</span></h2>
+            <p class="section-subtitle">Für 2026 erwarten wir drei vielversprechende Fohlen aus erstklassigen Anpaarungen.</p>
+        </div>
+        <div class="foals-showcase">
+            <div class="foal-main reveal">
+                <img src="https://images.pexels.com/photos/10254517/pexels-photo-10254517.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Stute mit Fohlen" loading="lazy">
+                <div class="foal-main-info">
+                    <p>v. Escamillo — a.d. Bella Bond</p>
+                    <h3>FOHLEN I / 2026</h3>
+                </div>
+            </div>
+            <div class="foals-side">
+                <div class="foal-mini reveal">
+                    <img src="https://images.pexels.com/photos/7922991/pexels-photo-7922991.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Fohlen auf der Koppel" loading="lazy">
+                    <div class="foal-mini-info">
+                        <h4>FOHLEN II / 2026</h4>
+                        <div class="sire">v. Veneno</div>
+                        <p>Erwartet Frühjahr 2026</p>
+                    </div>
+                </div>
+                <div class="foal-mini reveal">
+                    <img src="https://images.pexels.com/photos/15002356/pexels-photo-15002356.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Fohlen in Bewegung" loading="lazy">
+                    <div class="foal-mini-info">
+                        <h4>FOHLEN III / 2026</h4>
+                        <div class="sire">v. Asgards Ibiza</div>
+                        <p>Erwartet Frühjahr 2026</p>
+                    </div>
+                </div>
+                <div class="foal-mini reveal" style="background: var(--gold-glow); border-color: var(--gold-border);">
+                    <div style="width: 120px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: var(--bg-card); border: 1px solid var(--gold-border);">
+                        <span style="font-size: 32px;">🐴</span>
+                    </div>
+                    <div class="foal-mini-info">
+                        <h4>ELSA</h4>
+                        <div class="sire">v. Escamillo — mv. Belissimo M / Quaterback</div>
+                        <p>Nachwuchspferd in der Ausbildung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Verkaufspferde -->
+<section class="section-padding" id="verkauf">
+    <div class="container">
+        <div class="sales-info">
+            <div class="sales-text reveal">
+                <div class="section-eyebrow">Verkaufspferde</div>
+                <h2 class="section-title">PFERDE ZU <span class="accent">VERKAUFEN</span></h2>
+                <p>
+                    Regelmäßig bieten wir ausgewählte Pferde aus unserer Zucht zum Verkauf an —
+                    von vielversprechenden Fohlen über Remonten bis hin zu angeritten Nachwuchspferden
+                    mit Turnierpotenzial.
+                </p>
+                <p>
+                    Unsere Verkaufspferde zeichnen sich durch erstklassige Abstammungen,
+                    hervorragende Grundgangarten und ein freundliches Wesen aus. Alle Pferde
+                    wachsen in artgerechter Haltung auf und werden sorgfältig aufgezogen.
+                </p>
+                <div class="sales-features">
+                    <div class="sales-feature">Erstklassige Blutlinien</div>
+                    <div class="sales-feature">Artgerechte Aufzucht</div>
+                    <div class="sales-feature">Turnierpotenzial</div>
+                    <div class="sales-feature">AKU auf Wunsch</div>
+                    <div class="sales-feature">Videovorstellung</div>
+                    <div class="sales-feature">Besichtigung möglich</div>
+                </div>
+                <div style="margin-top: 30px; display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="#kontakt" class="btn-primary">Anfrage stellen →</a>
+                    <a href="https://www.instagram.com/dressurpferdezucht_ft/" target="_blank" rel="noopener" class="btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+            <div class="sales-image-wrap reveal">
+                <img src="https://images.pexels.com/photos/6589108/pexels-photo-6589108.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pferd mit Trense" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Instagram CTA -->
+<section class="insta-section section-padding">
+    <div class="container reveal">
+        <div class="insta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+        </div>
+        <div class="section-eyebrow" style="justify-content: center;">Folge uns auf Instagram</div>
+        <h2 class="section-title" style="text-align: center;">TÄGLICHE EINBLICKE IN <span class="accent">UNSERE ZUCHT</span></h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto;">
+            Auf Instagram teilen wir Fotos und Videos aus dem Stallalltag, von Turnieren,
+            Fohlengeburten und vielem mehr.
+        </p>
+        <a href="https://www.instagram.com/dressurpferdezucht_ft/" target="_blank" rel="noopener" class="insta-handle">@dressurpferdezucht_ft</a>
+        <div class="insta-stats">
+            <div class="insta-stat">
+                <div class="insta-stat-num">2.551</div>
+                <div class="insta-stat-label">Follower</div>
+            </div>
+            <div class="insta-stat">
+                <div class="insta-stat-num">387</div>
+                <div class="insta-stat-label">Beiträge</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section section-padding">
+    <div class="cta-bg">
+        <img src="https://images.pexels.com/photos/1366913/pexels-photo-1366913.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Pferde im Sonnenuntergang" loading="lazy">
+    </div>
+    <div class="cta-overlay"></div>
+    <div class="container cta-content reveal">
+        <div class="section-eyebrow" style="justify-content: center;">Interesse?</div>
+        <h2 class="section-title" style="text-align: center;">IHR NÄCHSTES <span class="accent">DRESSURPFERD</span></h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 40px;">
+            Ob Verkaufspferd, Fohlen oder Zuchtberatung — wir freuen uns auf Ihre Anfrage.
+        </p>
+        <div class="cta-actions">
+            <a href="#kontakt" class="btn-primary">Kontakt aufnehmen →</a>
+            <a href="https://www.instagram.com/dressurpferdezucht_ft/" target="_blank" rel="noopener" class="btn-secondary">Auf Instagram folgen</a>
+        </div>
+    </div>
+</section>
+
+<!-- Kontakt -->
+<section class="section-padding section-dark" id="kontakt">
+    <div class="container">
+        <div class="reveal">
+            <div class="section-eyebrow">Kontakt</div>
+            <h2 class="section-title">SPRECHEN SIE <span class="accent">UNS AN</span></h2>
+            <p class="section-subtitle">Interesse an unseren Pferden oder Fragen zur Zucht? Wir freuen uns auf Ihre Nachricht.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info-block reveal">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Standort</div>
+                        <div class="contact-value">Baden-Württemberg</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Instagram</div>
+                        <div class="contact-value"><a href="https://www.instagram.com/dressurpferdezucht_ft/" target="_blank" rel="noopener">@dressurpferdezucht_ft</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Facebook</div>
+                        <div class="contact-value"><a href="https://www.facebook.com/profile.php?id=100057569893498" target="_blank" rel="noopener">ZG Feichtenbeiner Thalacker</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Anfragen</div>
+                        <div class="contact-value">Über Instagram oder das Kontaktformular</div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-row">
+                    <input type="text" class="form-field" name="name" placeholder="Ihr Name *" required>
+                    <input type="email" class="form-field" name="email" placeholder="Ihre E-Mail *" required>
+                </div>
+                <input type="text" class="form-field" name="subject" placeholder="Betreff (z.B. Interesse an Verkaufspferd)">
+                <textarea class="form-field" name="message" placeholder="Ihre Nachricht *" required></textarea>
+                <button type="submit" class="form-submit">Nachricht senden →</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo-text" style="font-size: 18px;">FEICHTENBEINER <span style="color: var(--gold);">&</span> THALACKER</div>
+                <p>Dressurpferdezucht aus Baden-Württemberg. Erstklassige Dressurpferde mit internationalen Blutlinien und sportlicher Veranlagung.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#zucht">Zuchtstuten</a></li>
+                    <li><a href="#ueber-uns">Über uns</a></li>
+                    <li><a href="#erfolge">Erfolge</a></li>
+                    <li><a href="#nachzucht">Nachzucht</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Angebot</h4>
+                <ul>
+                    <li><a href="#verkauf">Verkaufspferde</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="https://www.instagram.com/dressurpferdezucht_ft/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100057569893498" target="_blank" rel="noopener">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Zuchtverband</h4>
+                <ul>
+                    <li><a href="https://www.pzvbw.de" target="_blank" rel="noopener">PZV Baden-Württemberg</a></li>
+                    <li><a href="https://www.rimondo.com/de/member-details/342921/selina-thalacker" target="_blank" rel="noopener">Rimondo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">&copy; 2026 Dressurpferdezucht Feichtenbeiner & Thalacker. Alle Rechte vorbehalten.</div>
+            <div class="footer-legal">
+                <a href="#impressum">Impressum</a>
+                <a href="#datenschutz">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    'use strict';
+
+    // Page Loader
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('pageLoader').classList.add('hidden');
+        }, 800);
+    });
+
+    // Header scroll
+    var header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', function() {
+        header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile nav
+    var menuToggle = document.getElementById('menuToggle');
+    var mobileNav = document.getElementById('mobileNav');
+    var mobileNavClose = document.getElementById('mobileNavClose');
+
+    menuToggle.addEventListener('click', function() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    function closeMobileNav() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    window.closeMobileNav = closeMobileNav;
+
+    mobileNavClose.addEventListener('click', closeMobileNav);
+
+    // Scroll reveal
+    var reveals = document.querySelectorAll('.reveal');
+    var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(function(el) { revealObserver.observe(el); });
+
+    // Stats counter
+    var statsObserved = false;
+    var statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting && !statsObserved) {
+                statsObserved = true;
+                document.querySelectorAll('.stat-number').forEach(function(counter) {
+                    var target = parseInt(counter.getAttribute('data-target'));
+                    var suffix = counter.getAttribute('data-suffix') || '';
+                    var duration = 2000;
+                    var step = target / (duration / 16);
+                    var current = 0;
+                    var timer = setInterval(function() {
+                        current += step;
+                        if (current >= target) { current = target; clearInterval(timer); }
+                        counter.textContent = Math.floor(current) + suffix;
+                    }, 16);
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    var statsSection = document.querySelector('.stats-section');
+    if (statsSection) statsObserver.observe(statsSection);
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                var offset = 80;
+                var pos = target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top: pos, behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Contact form
+    var form = document.getElementById('contactForm');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var data = new FormData(form);
+            var name = data.get('name');
+            var email = data.get('email');
+            var subject = data.get('subject') || 'Anfrage von der Website';
+            var message = data.get('message');
+            var body = 'Name: ' + name + '\nE-Mail: ' + email + '\n\n' + message;
+            window.location.href = 'mailto:dressurpferdezucht.ft@gmail.com?subject=' +
+                encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        });
+    }
+
+    // Hero parallax
+    window.addEventListener('scroll', function() {
+        var hero = document.querySelector('.hero-bg img');
+        if (hero && window.scrollY < window.innerHeight) {
+            hero.style.transform = 'scale(1.05) translateY(' + (window.scrollY * 0.15) + 'px)';
+        }
+    });
+
+})();
+</script>
+</body>
+</html>
